@@ -16,7 +16,6 @@ return [
             'debug' => $_ENV['YII_DEBUG'],
         ],
         'extensions' => [
-            //
         ],
         'loader' => [
             'paths' => [
