@@ -1,19 +1,22 @@
 {
-    "name": "yiisoft/_____",
+    "name": "yiisoft/yii-twig",
     "type": "library",
-    "description": "_____",
+    "description": "yii-twig",
     "keywords": [
-        "_____"
+        "yii3",
+        "yii-twig",
+        "twig",
+        "twig-extension"
     ],
     "homepage": "https://www.yiiframework.com/",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/yiisoft/_____/issues?state=open",
+        "issues": "https://github.com/yiisoft/yii-twig/issues?state=open",
         "forum": "https://www.yiiframework.com/forum/",
         "wiki": "https://www.yiiframework.com/wiki/",
         "irc": "irc://irc.freenode.net/yii",
         "chat": "https://t.me/yii3en",
-        "source": "https://github.com/yiisoft/_____"
+        "source": "https://github.com/yiisoft/yii-twig"
     },
     "funding": [
         {
@@ -28,7 +31,8 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^8.1"
+        "php": "^8.1",
+        "yiisoft/view-twig": "^2.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",
@@ -39,12 +43,22 @@
     },
     "autoload": {
         "psr-4": {
-            "Yiisoft\\_____\\": "src"
+            "Yiisoft\\Yii\\Twig\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Yiisoft\\_____\\Tests\\": "tests"
+            "Yiisoft\\Yii\\Twig\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "config-plugin-options": {
+            "source-directory": "config"
+        },
+        "config-plugin": {
+            "params": "params.php",
+            "params-web": "params-web.php",
+            "di": "di.php"
         }
     },
     "config": {
