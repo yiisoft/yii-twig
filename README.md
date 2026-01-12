@@ -19,7 +19,7 @@ The package provides various [Twig](https://twig.symfony.com/) extensions for Yi
 
 ## Requirements
 
-- PHP 8.1 or higher.
+- PHP 8.1 - 8.5.
 
 ## Installation
 

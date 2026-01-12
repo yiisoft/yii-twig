@@ -5,7 +5,7 @@ declare(strict_types=1);
 use Yiisoft\Aliases\Aliases;
 use Yiisoft\Definitions\DynamicReference;
 use Yiisoft\Definitions\Reference;
-use Yiisoft\View\Twig\TemplateRenderer;
+use Yiisoft\View\Twig\TwigTemplateRenderer;
 
 return [
     'yiisoft/yii-twig' => [
@@ -25,7 +25,7 @@ return [
     ],
     'yiisoft/view' => [
         'renderers' => [
-            'twig' => Reference::to(TemplateRenderer::class),
+            'twig' => Reference::to(TwigTemplateRenderer::class),
         ],
         'defaultExtension' => 'twig',
     ],
