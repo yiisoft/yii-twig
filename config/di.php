@@ -16,8 +16,8 @@ return [
         '__construct()' => ['options' => $params['yiisoft/yii-twig']['options']],
         'setExtensions()' => ['extensions' => $params['yiisoft/yii-twig']['extensions']],
     ],
-    LoaderInterface::class => static fn (Aliases $aliases) => new FilesystemLoader(
+    LoaderInterface::class => static fn(Aliases $aliases) => new FilesystemLoader(
         [$aliases->get('@views'), ...$params['yiisoft/yii-twig']['loader']['paths']],
-        $aliases->get('@resources')
+        $aliases->get('@resources'),
     ),
 ];
