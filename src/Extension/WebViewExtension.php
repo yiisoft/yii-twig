@@ -10,17 +10,15 @@ use Yiisoft\View\WebView;
 
 final class WebViewExtension extends AbstractExtension
 {
-    public function __construct(private WebView $view)
-    {
-    }
+    public function __construct(private readonly WebView $view) {}
 
     public function getFunctions()
     {
         $options = ['is_safe' => ['html']];
 
         return [
-            new TwigFunction('title', [$this->view, 'getTitle'], $options),
-            new TwigFunction('head', [$this->view, 'head'], $options),
+            new TwigFunction('title', $this->view->getTitle(...), $options),
+            new TwigFunction('head', $this->view->head(...), $options),
         ];
     }
 }
