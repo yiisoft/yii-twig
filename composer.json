@@ -33,7 +33,6 @@
     "require": {
         "php": "8.1 - 8.5",
         "twig/twig": "^3.28",
-        "yiisoft/aliases": "^3.1",
         "yiisoft/view": "^12.2",
         "yiisoft/view-twig": "^3.0"
     },

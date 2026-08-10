@@ -13,4 +13,6 @@ return (new Configuration())
     ->addPathToScan(__DIR__ . '/tests', isDev: true)
     // `yiisoft/definitions` is used only in `config/params.php` and `config/params-web.php`, which are loaded
     // by consumers using `yiisoft/di`, that already requires `yiisoft/definitions` itself.
-    ->ignoreErrorsOnPackages(['yiisoft/definitions'], [ErrorType::SHADOW_DEPENDENCY]);
+    ->ignoreErrorsOnPackages(['yiisoft/definitions'], [ErrorType::SHADOW_DEPENDENCY])
+    // `Yiisoft\Aliases\Aliases` is used only in `config/*`
+    ->ignoreUnknownClasses(['Yiisoft\Aliases\Aliases']);
