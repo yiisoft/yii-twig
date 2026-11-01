@@ -37,6 +37,7 @@
         "yiisoft/view-twig": "^3.0"
     },
     "require-dev": {
+        "ext-dom": "*",
         "friendsofphp/php-cs-fixer": "^3.89.1",
         "httpsoft/http-message": "^1.0",
         "infection/infection": "^0.29.8 || ^0.35.8",
